@@ -1,0 +1,14 @@
+# src/Resources/config/services.yaml
+
+services:
+    Hch\ElasticMLBundle\Service\ElasticMLService:
+        arguments:
+            $client: '%elastic_ml.host%'
+            $logger: '@logger'
+        public: true
+
+    Hch\ElasticMLBundle\Command\CreateMLJobCommand:
+        arguments:
+            $elasticMLService: '@Hch\ElasticMLBundle\Service\ElasticMLService'
+        tags:
+            - { name: 'console.command' }

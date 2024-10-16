@@ -1,0 +1,2 @@
+elastic_ml:
+  host: 'http://localhost:9200'

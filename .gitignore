@@ -1,0 +1,55 @@
+# Symfony related
+/var/
+/vendor/
+/.env
+.phpunit.result.cache
+/public/bundles/
+/config/secrets/prod/prod.decrypt.private.php
+/config/secrets/test/test.decrypt.private.php
+
+# Logs and cache
+/logs/*
+/cache/*
+/tmp/*
+
+# Composer
+composer.phar
+
+# IDE specific
+/.idea/
+/.vscode/
+/nbproject/
+/*.swp
+
+# MacOS
+.DS_Store
+
+# Node and build
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+
+# Coverage reports
+/coverage/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# PHPUnit
+/phpunit.xml
+/.phpunit.result.cache
+/test-results/
+
+# Miscellaneous
+*.log
+*.lock
+*.tmp
+*.bak
+*.orig
+*.old
+
+# Ignoring built files or archives
+*.zip
+*.tar.gz
+*.rar
